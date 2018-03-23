@@ -24,9 +24,25 @@ GameObject:
   - component: {fileID: 61855689756173638}
   - component: {fileID: 95533878194966760}
   - component: {fileID: 114477300061079368}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EnemyArcher
   m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1841312289784858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4552245443101106}
+  - component: {fileID: 114860016279165796}
+  m_Layer: 0
+  m_Name: EnemyFiring
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,8 +56,22 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 13.686, y: -2.457, z: 0}
   m_LocalScale: {x: 0.558584, y: 0.46023142, z: 0.5}
-  m_Children: []
+  m_Children:
+  - {fileID: 4552245443101106}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4552245443101106
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841312289784858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.24, y: 0.04, z: 0}
+  m_LocalScale: {x: 0.1, y: 2.17282, z: 2}
+  m_Children: []
+  m_Father: {fileID: 4392415774168582}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50813068491533060
@@ -118,6 +148,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnemyAttacking: 0
+--- !u!114 &114860016279165796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841312289784858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf3f27cbce5f0a4ab0f7a933abeffc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyArrow: {fileID: 1885596443579016, guid: e01dc9e501a1c0e42963cf95b589a6a8, type: 2}
 --- !u!212 &212349207114974698
 SpriteRenderer:
   m_ObjectHideFlags: 1

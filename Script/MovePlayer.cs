@@ -10,10 +10,14 @@ public class MovePlayer : MonoBehaviour {
 	private float jumpPower = 15f;
 	private bool canJump;
 	public bool isAttacking;
+	private AudioSource jumpAudio;
+	private AudioSource attackAudio;
 
 	void Awake(){
 		rb2D = gameObject.GetComponent<Rigidbody2D> ();
 		anim = gameObject.GetComponent<Animator> ();
+		jumpAudio = GameObject.Find ("jumpAudio").GetComponent<AudioSource> ();
+		attackAudio = GameObject.Find ("attackAudio").GetComponent<AudioSource> ();
 	}
 	void Start(){
 		canJump = true;
@@ -49,10 +53,12 @@ public class MovePlayer : MonoBehaviour {
 		if (Input.GetButtonDown ("Jump") && canJump) {
 			rb2D.velocity = Vector2.up * jumpPower;
 			anim.Play ("Jump");
+			jumpAudio.Play ();
 		}
 		if (Input.GetButton ("Fire1") && !isAttacking) {
 			anim.Play ("Attack");
 			isAttacking = true;
+			attackAudio.Play ();
 		}
 		if (Input.GetButtonUp ("Fire1")) {
 			isAttacking = false;
