@@ -10,6 +10,7 @@ public class MovePlayer : MonoBehaviour {
 	private float jumpPower = 15f;
 	private bool canJump;
 	public bool isAttacking;
+	public bool isDead;
 	private AudioSource jumpAudio;
 	private AudioSource attackAudio;
 
@@ -22,46 +23,52 @@ public class MovePlayer : MonoBehaviour {
 	void Start(){
 		canJump = true;
 		isAttacking = false;
+		isDead = false;
 	}
-	void Update(){
-		if (grounded) {
-			canJump = true;
-		} else {
-			canJump = false;
-		}
-		if (rb2D.velocity == Vector2.zero && !isAttacking) {
-			anim.Play ("Idle");
-		}
-		if (Input.GetButton ("Horizontal") && Input.GetAxis ("Horizontal") > 0) {
-			rb2D.transform.rotation = Quaternion.Euler (0, 0, 0);
-			rb2D.velocity = Vector2.right * moveVelocity;
+	void Update ()
+	{
+		if (!isDead) {
 			if (grounded) {
-				anim.Play ("Run");
+				canJump = true;
 			} else {
-				anim.Play ("Jump");
+				canJump = false;
 			}
-		}
-		if (Input.GetButton ("Horizontal") && Input.GetAxis ("Horizontal") < 0) {
-			rb2D.transform.rotation = Quaternion.Euler (0, 180, 0);
-			rb2D.velocity = Vector2.left * moveVelocity;
-			if (grounded) {
-				anim.Play ("Run");
-			} else {
-				anim.Play ("Jump");
+			if (rb2D.velocity == Vector2.zero && !isAttacking) {
+				anim.Play ("Idle");
 			}
-		}
-		if (Input.GetButtonDown ("Jump") && canJump) {
-			rb2D.velocity = Vector2.up * jumpPower;
-			anim.Play ("Jump");
-			jumpAudio.Play ();
-		}
-		if (Input.GetButton ("Fire1") && !isAttacking) {
-			anim.Play ("Attack");
-			isAttacking = true;
-			attackAudio.Play ();
-		}
-		if (Input.GetButtonUp ("Fire1")) {
-			isAttacking = false;
+			if (Input.GetButton ("Horizontal") && Input.GetAxis ("Horizontal") > 0) {
+				rb2D.transform.rotation = Quaternion.Euler (0, 0, 0);
+				rb2D.velocity = Vector2.right * moveVelocity;
+				if (grounded) {
+					anim.Play ("Run");
+				} else if (!grounded && !isAttacking) {
+					anim.Play ("Jump");
+				} else if (!grounded && isAttacking) {
+					anim.Play ("Attack");
+				}
+			}
+			if (Input.GetButton ("Horizontal") && Input.GetAxis ("Horizontal") < 0) {
+				rb2D.transform.rotation = Quaternion.Euler (0, 180, 0);
+				rb2D.velocity = Vector2.left * moveVelocity;
+				if (grounded) {
+					anim.Play ("Run");
+				} else {
+					anim.Play ("Jump");
+				}
+			}
+			if (Input.GetButtonDown ("Jump") && canJump) {
+				rb2D.velocity = Vector2.up * jumpPower;
+				anim.Play ("Jump");
+				jumpAudio.Play ();
+			}
+			if (Input.GetButton ("Fire1") && !isAttacking) {
+				anim.Play ("Attack");
+				isAttacking = true;
+				attackAudio.Play ();
+			}
+			if (Input.GetButtonUp ("Fire1")) {
+				isAttacking = false;
+			}
 		}
 	}
 }

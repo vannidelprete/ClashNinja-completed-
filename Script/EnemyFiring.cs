@@ -9,7 +9,7 @@ public class EnemyFiring : MonoBehaviour {
 	public GameObject enemyArrow;
 	private Vector3 arrowRotation;
 	private float timePassedSinceLast;
-	private float delayFire = 2f;
+	private float delayFire = 3f;
 	// Use this for initialization
 	void Awake() {
 		player = GameObject.FindGameObjectWithTag ("Player");
@@ -21,15 +21,17 @@ public class EnemyFiring : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (enemyBehaviour.isEnemyAttacking && timePassedSinceLast >= delayFire) {
-			GameObject arrow = GameObject.Instantiate (enemyArrow);
-			arrow.transform.position = transform.position;
-			Vector2 direction = player.transform.position - arrow.transform.position;
-			arrow.GetComponent<EnemyArrow> ().setArrowDirection (direction);
-			timePassedSinceLast = 0f;
-		}	
-		if (timePassedSinceLast < delayFire) {
-			timePassedSinceLast += Time.deltaTime;
+		if (player != null) {
+			if (enemyBehaviour.isEnemyAttacking && timePassedSinceLast >= delayFire) {
+				GameObject arrow = GameObject.Instantiate (enemyArrow);
+				arrow.transform.position = transform.position;
+				Vector2 direction = player.transform.position - arrow.transform.position;
+				arrow.GetComponent<EnemyArrow> ().setArrowDirection (direction);
+				timePassedSinceLast = 0f;
+			}	
+			if (timePassedSinceLast < delayFire) {
+				timePassedSinceLast += Time.deltaTime;
+			}
 		}
 	}
 }

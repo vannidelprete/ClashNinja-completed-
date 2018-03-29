@@ -8,9 +8,11 @@ public class EnemyArrow : MonoBehaviour {
 	private Vector2 arrowPosition;
 	private Vector3 arrowRotation;
 	private Vector2 upToView;
+	//private PlayerHealth health;
 	// Use this for initialization
 	void Awake(){
 		upToView = Camera.main.ViewportToWorldPoint (new Vector2(1, 1)); //prendo il punto della visuale in alto a destra
+		//health = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
 	}
 	void Start () {
 	}
@@ -27,7 +29,10 @@ public class EnemyArrow : MonoBehaviour {
 			Destroy (gameObject);
 		}
 	}
-	void OnCollisionEnter2D(Collision2D coll){
+	void OnTriggerEnter2D(Collider2D other){
+		if(!other.isTrigger && other.CompareTag("Player")){
+			other.SendMessageUpwards ("Damage", 1);
+		}
 		Destroy (gameObject);
 	}
 }

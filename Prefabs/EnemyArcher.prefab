@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnemyAttacking: 0
+  isDead: 0
 --- !u!114 &114860016279165796
 MonoBehaviour:
   m_ObjectHideFlags: 1
