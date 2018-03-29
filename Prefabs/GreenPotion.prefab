@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4178263695823390}
   - component: {fileID: 212551531125484260}
   - component: {fileID: 61827072911960804}
+  - component: {fileID: 114790605223925352}
   m_Layer: 16
   m_Name: GreenPotion
   m_TagString: GreenPotion
@@ -66,6 +67,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18821129, y: 0.29625088}
   m_EdgeRadius: 0
+--- !u!114 &114790605223925352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1826172148682304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d062c795242d845b699bf1ee52a945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212551531125484260
 SpriteRenderer:
   m_ObjectHideFlags: 1

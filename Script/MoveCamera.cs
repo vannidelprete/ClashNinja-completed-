@@ -14,9 +14,11 @@ public class MoveCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (player.transform.position.x > 0 && player.transform.position.x < 127.8) {
-			xPlayer = player.transform.position.x;
-			transform.position = new Vector3 (xPlayer,0,-10);
+		if (player != null) {
+			if (player.transform.position.x > 0 && player.transform.position.x < 127.8) {
+				xPlayer = player.transform.position.x;
+				transform.position = new Vector3 (xPlayer, 0, -10);
+			}
 		}
 	}
 }

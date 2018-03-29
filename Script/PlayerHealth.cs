@@ -24,6 +24,14 @@ public class PlayerHealth : MonoBehaviour {
 		}
 	}
 
+	public void UpHealth (int up) {
+		if (health + up < 10) {
+			health += up;
+		} else {
+			health = 10;
+		}
+	}
+
 	void Update () {
 		if (health != 0) {
 			lifeBar.sprite = barSprite [health - 1];
