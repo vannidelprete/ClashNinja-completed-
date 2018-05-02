@@ -2,35 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Gestione delle tempistiche di attacco dell'arciere scheletro
+//Gestione tempistiche di attacco del guerriero drago
 
-public class EnemyFiring : MonoBehaviour {
+public class EnemyDragonFiring : MonoBehaviour {
 	private Vector2 fireDirection;
 	private GameObject player;
-	private EnemyBehaviour enemyBehaviour;
-	public GameObject enemyArrow;
+	private EnemyDragonBehaviour enemyBehaviour;
+	public GameObject enemyFireBall;
 	private Vector3 arrowRotation;
 	private float timePassedSinceLast;
-	private float delayFire = 0.933f;
+	private float delayFire = 0.767f;
 
 	void Awake() {
 		player = GameObject.FindGameObjectWithTag ("Player");
-		enemyBehaviour = GetComponentInParent<EnemyBehaviour> ();
+		enemyBehaviour = GetComponentInParent<EnemyDragonBehaviour> ();
 	}
-
 	void Start () {
 		timePassedSinceLast = delayFire;
 	}
 
+
 	void Update () {
 		if (player != null) {
 			if (!enemyBehaviour.isDead) {
-				//sincronizzazione dell'attacco con la clip di attacco del mecanim
 				if (enemyBehaviour.isEnemyAttacking && timePassedSinceLast >= delayFire) {
-					GameObject arrow = GameObject.Instantiate (enemyArrow);
-					arrow.transform.position = transform.position;
-					Vector2 direction = player.transform.position - arrow.transform.position;
-					arrow.GetComponent<EnemyArrow> ().setArrowDirection (direction);
+					GameObject fireBall = GameObject.Instantiate (enemyFireBall);
+					fireBall.transform.position = transform.position;
+					Vector2 direction = player.transform.position - fireBall.transform.position;
+					fireBall.GetComponent<EnemyFireBall> ().setArrowDirection (direction);
 					timePassedSinceLast = 0f;
 				}	
 				if (!enemyBehaviour.isEnemyAttacking) {

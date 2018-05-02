@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Gestione delle tempistiche di attacco dell'arciere scheletro
+//Gestione delle tempistiche di attacco del mago
 
-public class EnemyFiring : MonoBehaviour {
+public class EnemyWizardFiring : MonoBehaviour {
 	private Vector2 fireDirection;
 	private GameObject player;
-	private EnemyBehaviour enemyBehaviour;
-	public GameObject enemyArrow;
+	private EnemyWizardBehaviour enemyBehaviour;
+	public GameObject[] enemySphere;
 	private Vector3 arrowRotation;
 	private float timePassedSinceLast;
-	private float delayFire = 0.933f;
+	private float delayFire = 1.183f;
 
 	void Awake() {
 		player = GameObject.FindGameObjectWithTag ("Player");
-		enemyBehaviour = GetComponentInParent<EnemyBehaviour> ();
+		enemyBehaviour = GetComponentInParent<EnemyWizardBehaviour> ();
 	}
-
 	void Start () {
 		timePassedSinceLast = delayFire;
 	}
@@ -25,12 +24,11 @@ public class EnemyFiring : MonoBehaviour {
 	void Update () {
 		if (player != null) {
 			if (!enemyBehaviour.isDead) {
-				//sincronizzazione dell'attacco con la clip di attacco del mecanim
 				if (enemyBehaviour.isEnemyAttacking && timePassedSinceLast >= delayFire) {
-					GameObject arrow = GameObject.Instantiate (enemyArrow);
-					arrow.transform.position = transform.position;
-					Vector2 direction = player.transform.position - arrow.transform.position;
-					arrow.GetComponent<EnemyArrow> ().setArrowDirection (direction);
+					GameObject sphere = GameObject.Instantiate (enemySphere [Random.Range (0, enemySphere.GetLength (0))]);
+					sphere.transform.position = transform.position;
+					Vector2 direction = player.transform.position - sphere.transform.position;
+					sphere.GetComponent<EnemySphere> ().setArrowDirection (direction);
 					timePassedSinceLast = 0f;
 				}	
 				if (!enemyBehaviour.isEnemyAttacking) {

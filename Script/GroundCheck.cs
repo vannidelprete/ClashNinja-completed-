@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Rilevamento se il giocatore è a terra o in salto
+
 public class GroundCheck : MonoBehaviour {
 	private MovePlayer movePlayer;
 
@@ -9,7 +11,7 @@ public class GroundCheck : MonoBehaviour {
 		movePlayer = gameObject.GetComponentInParent<MovePlayer> ();
 	}
 
-	void OnTriggerEnter2D(Collider2D col){
+	void OnTriggerStay2D(Collider2D col){
 		movePlayer.grounded = true;
 	}
 	void OnTriggerExit2D(Collider2D col){

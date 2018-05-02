@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Gestione del movimento della Main Camera
+
 public class MoveCamera : MonoBehaviour {
 	private GameObject player;
 	private float xPlayer;
-	// Use this for initialization
+	private float startWorld = 0f;
+	private float endWorld = 127.8f;
+
 	void Awake(){
 		player = GameObject.FindGameObjectWithTag ("Player");
 	}
-	void Start () {
-	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		if (player != null) {
-			if (player.transform.position.x > 0 && player.transform.position.x < 127.8) {
+			//segue il giocatore
+			if (player.transform.position.x > startWorld && player.transform.position.x < endWorld) {
 				xPlayer = player.transform.position.x;
 				transform.position = new Vector3 (xPlayer, 0, -10);
 			}

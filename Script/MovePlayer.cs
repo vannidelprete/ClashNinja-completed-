@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Gestione del movimento del giocatore
+
 public class MovePlayer : MonoBehaviour {
 	private Rigidbody2D rb2D;
 	private Animator anim;
 	public bool grounded;
-	private float moveVelocity = 5f;
-	private float jumpPower = 15f;
-	private bool canJump;
+	private float maxVelocity = 4f;
+	private float moveVelocity = 50f;
+	private float jumpPower = 600f;
 	public bool isAttacking;
 	public bool isDead;
 	private AudioSource jumpAudio;
@@ -20,56 +22,57 @@ public class MovePlayer : MonoBehaviour {
 		jumpAudio = GameObject.Find ("jumpAudio").GetComponent<AudioSource> ();
 		attackAudio = GameObject.Find ("attackAudio").GetComponent<AudioSource> ();
 	}
+
 	void Start(){
-		canJump = true;
 		isAttacking = false;
 		isDead = false;
 	}
-	void Update ()
-	{
+
+	void FixedUpdate(){
+		float xInput = Input.GetAxis ("Horizontal");
 		if (!isDead) {
-			if (grounded) {
-				canJump = true;
-			} else {
-				canJump = false;
+			rb2D.AddForce (Vector2.right * moveVelocity * xInput);
+
+			if (rb2D.velocity.x > maxVelocity) {
+				rb2D.velocity = new Vector2 (maxVelocity, rb2D.velocity.y);
 			}
-			if (rb2D.velocity == Vector2.zero && !isAttacking) {
-				anim.Play ("Idle");
+
+			if (rb2D.velocity.x < -maxVelocity) {
+				rb2D.velocity = new Vector2 (-maxVelocity, rb2D.velocity.y);
 			}
-			if (Input.GetButton ("Horizontal") && Input.GetAxis ("Horizontal") > 0) {
-				rb2D.transform.rotation = Quaternion.Euler (0, 0, 0);
-				rb2D.velocity = Vector2.right * moveVelocity;
-				if (grounded) {
-					anim.Play ("Run");
-				} else if (!grounded && !isAttacking) {
-					anim.Play ("Jump");
-				} else if (!grounded && isAttacking) {
-					anim.Play ("Attack");
-				}
+
+			if (xInput == 0) {
+				rb2D.velocity = new Vector2 (0, 0);
 			}
-			if (Input.GetButton ("Horizontal") && Input.GetAxis ("Horizontal") < 0) {
-				rb2D.transform.rotation = Quaternion.Euler (0, 180, 0);
-				rb2D.velocity = Vector2.left * moveVelocity;
-				if (grounded) {
-					anim.Play ("Run");
-				} else {
-					anim.Play ("Jump");
-				}
+		}
+	}
+		
+	void Update () {
+		//Gestione delle clip del mecanim
+		anim.SetFloat ("Speed", Mathf.Abs (Input.GetAxis ("Horizontal")));
+		anim.SetBool ("Grounded", grounded);
+		anim.SetBool ("IsAttacking", isAttacking);
+		anim.SetBool ("IsDead", isDead);
+		if (!isDead) {
+			//rotazione del giocatore
+			if (Input.GetAxis ("Horizontal") > 0.1f) {
+				transform.localScale = new Vector3 (1, 1, 1);
 			}
-			if (Input.GetButtonDown ("Jump") && canJump) {
-				rb2D.velocity = Vector2.up * jumpPower;
-				anim.Play ("Jump");
+			if (Input.GetAxis ("Horizontal") < -0.1f) {
+				transform.localScale = new Vector3 (-1, 1, 1);
+			}
+			//salto
+			if (Input.GetButtonDown ("Jump") && grounded) {
+				rb2D.AddForce (Vector2.up * jumpPower);
 				jumpAudio.Play ();
 			}
-			if (Input.GetButton ("Fire1") && !isAttacking) {
-				anim.Play ("Attack");
+			//attacco
+			if (Input.GetButton ("Fire1")) {
 				isAttacking = true;
 				attackAudio.Play ();
-			}
-			if (Input.GetButtonUp ("Fire1")) {
+			} else {
 				isAttacking = false;
 			}
 		}
 	}
 }
-
