@@ -1,39 +1,42 @@
 \documentclass[12pt,a4paper,openright,twoside]{book}
 
 %pacchetti vari
-\usepackage[italian]{babel} 	%per l'italiano
-\usepackage[T1]{fontenc}		%per vedere lettere accentate
-\usepackage[utf8]{inputenc}		%per inserire lettere accentate
-\usepackage{textcomp}			%boh
-\usepackage{floatflt}			%immagini fluttuanti
+\usepackage[italian]{babel} 
+\usepackage[T1]{fontenc}	
+\usepackage[utf8]{inputenc}	
+\usepackage{textcomp}		
+\usepackage{floatflt}		
 \usepackage{frontespizio}
+\usepackage{times}
 \usepackage[font=small,hang]{caption} %caption delle immagini
-\usepackage{graphicx}	%boh
-\usepackage{hyperref}	%per i link
-\usepackage{fullpage}
+\usepackage{graphicx}	
+\usepackage{hyperref}	
+%\usepackage{fullpage}
+\usepackage{fancyhdr}
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
 \usepackage{subfig}
+\usepackage{pdfpages}
+\usepackage{url}
+\pagestyle{fancy}
 
 \begin{document}
-    
+    \includepdf[pages={1},pagecommand={\thispagestyle{empty}}]{fronteingegnerialt.pdf}
+    \newpage
+    \thispagestyle{empty}
     \tableofcontents %indice
     \newpage
     \thispagestyle{empty}
     \chapter*{Introduzione}
     \addcontentsline{toc}{chapter}{Introduzione}
-    Questa tesi ha l'obiettivo di illustrare il lavoro svolto per sviluppare un videogioco il cui principio è quello di 
-    fornire uno strumento per il trattamento dell'ambliopia anche nel tempo libero. Infatti, come si mostrerà in seguito, un fattore 
-    importante per la creazione del videogioco mostrato nei capitoli seguenti, è quello di far congiungere la terapia
-    con il divertimento.  \\\\
+    Questa tesi si pone come obiettivo illustrare lo sviluppo di un videogioco per il trattamento dell'ambliopia infantile, il quale attraverso un approccio ludico consente di estendere la terapia al tempo libero. Infatti, come si mostrerà in seguito, un fattore 
+    decisivo nell'ideazione e nella creazione del videogioco è quella di avvicinare la terapia al divertimento.  \\\\
     Il nome del videogioco è Clash Ninja ed è da considerarsi una parte del progetto \textsc{3D4Amb} (sito ufficiale, \url{https://3d4amb.unibg.it}) dell'Università degli Studi di Bergamo supervisionato dal prof. Angelo Gargantini. \\\\
-    Per prima cosa si farà un'analisi del contesto, ovvero in cosa consiste l'ambliopia, come viene causata e come viene
-    trattata indicando le varie tecniche per poter combattere tale patologia.\\\\
+    Innanzitutto sarà svolta un’analisi generale della malattia, illustrandone la definizione, le cause e i trattamenti tradizionali per affrontare tale patologia.\\\\
     Si parlerà inoltre del progetto 3D4Amb indicando come esso intende affrontare il problema sfruttando diverse tecnologie e 
     esponendo i requisiti richiesti per rendere il videogioco conforme alla sua filosofia.\\\\
-    Verranno riportati gli strumenti utilizzati per lo sviluppo e la scelta degli accessori per testare il videogioco. \\\\
-    Infine si espone il lavoro svolto per lo sviluppo software di Clash Ninja descrivendone le tecniche utilizzate e gli elementi
-    del videogioco.
+    A seguire verranno riportati gli strumenti e gli accessori utilizzati nello sviluppo e nella verifica del funzionamento del videogioco. \\\\
+    Infine si espone il lavoro svolto per lo sviluppo software di Clash Ninja specificando sia le tecniche utilizzate nella stesura del programma sia gli elementi del videogioco stesso.
     
     \newpage  
     \thispagestyle{empty}
@@ -42,7 +45,7 @@
     \chapter{Ambliopia}
     \section{Cos'è l'ambliopia?}
     L'ambliopia è una malattia degli occhi e dell'apparato visivo estremamente frequente e pericolosa che colpisce soggetti in età pediatrica.
-    Il termine deriva dal greco e, più esattamente, da "ops" (che significa "visione") e "amblyos" (che significa "ottusa, pigra"). Il suo nome comune è "occhio pigro". \cite{wiki:xxx} \\ Essa è una condizione in cui la funzione visiva di un occhio è ridotta o assente senza che ci siano stati danni oculari organici e consiste in un deficit dell’apparato visivo : il cervello, non riuscendo a interpretare correttamente le informazioni che gli giungono, “disattiva” i segnali che provengono da un occhio. \cite{iapbamb} \\
+    Il termine deriva dal greco e, più esattamente, da "ops" (che significa "visione") e "amblyos" (che significa "ottusa, pigra"). Il suo nome comune è "occhio pigro". \cite{wiki:amb} \\ Essa è una condizione in cui la funzione visiva di un occhio è ridotta o assente senza che ci siano stati danni oculari organici e consiste in un deficit dell’apparato visivo : il cervello, non riuscendo a interpretare correttamente le informazioni che gli giungono, “disattiva” i segnali che provengono da un occhio. \cite{iapbamb} \\
     
     \section{Cause dell'ambliopia}
     Le cause più comuni dell'ambliopia sono:
@@ -140,11 +143,19 @@
     	\item \textbf{\textit{Divertimento}}: Il sistema deve trasmettere intrattenimento all'utente che lo sta utilizzando, alimentando così la propensione dell'utente a collaborare. Ciò facilizza il successo della diagnosi e del trattamento dell'ambliopia. 
     \end{enumerate}
 	Con i metodi tradizionali capita spesso che ci sia poco coinvolgimento da parte dei pazienti in età pediatrica e ciò può portare ad avere ben pochi miglioramenti nella terapia. Perciò è importante poter congiungere il trattamento con l'intrattenimento.
-
+	
     \section{Tecniche}
+    Il progetto 3D4Amb mira a sviluppare sistemi che consentono la visione binoculare, ovvero la visualizzazione di immagini differenti all'occhio sano e all'occhio ambliope. In questo modo è possibile rendere visibile l'immagine con più dettagli all'occhio ambliope e quello con meno dettagli all'occhio sano, obbligando così il cervello a raccogliere più informazioni dall'occhio ambliope.
+     \begin{figure}[h]
+    	\centering   	
+    	\includegraphics[width=6cm, height=7cm]{visione.png}
+    	\caption{Utilizzo della tecnologia 3D in 3D4Amb}
+    	\label{fig:visione}
+    \end{figure}
+    \newpage
     \subsection{Tecnica con anaglifi}
     L'anaglifo è un immagine stereoscopica che, se osservata con appositi occhiali (come quelli in \figurename \ref{fig:anagl}), fornisce un illusione di tridimensionalità.\\
-    Per creare un immagine anaglifica vengono riprese due immagini parallele alla distanza degli occhi umani. Una delle due immagini viene filtrata con il colore rosso (che è un colore sottrattivo) mentre l'altra viene filtrata con un filtro complementare (come il ciano, il blu e il verde che sono colori additivi). Infine si uniscono le due immagini e si stampa l'anaglifo, oppure è possibile proiettare le due immagini simultaneamente.\\ Visualizzare l'anaglifo a occhio nudo però non è agevole e non si percepisce l'illusione della tridimensionalità. Se però si visualizza l'immagine con appositi occhiali dove si ha una lente rossa e una lente filtrata con un colore additivo si percepisce una profondità dell'immagine che in realtà non esiste: l'occhio che vede attraverso il filtro rosso vedrà le parti di immagine rosse come parti "chiare", mentre l'occhio che vede attraverso il filtro ciano scarta le parti rosse e vede le parti dell'immagine ciano come parti "scure", così da fornire la tridimensionalità dell'immagine. 
+    Per creare un immagine anaglifica vengono riprese due immagini parallele con due telecamere alla stessa distanza degli occhi umani (dai 6,5 cm a 7 cm). Una delle due immagini viene filtrata con il colore rosso (che è un colore sottrattivo) mentre l'altra viene filtrata con un filtro complementare (come il ciano, il blu e il verde che sono colori additivi). Infine si uniscono le due immagini e si stampa l'anaglifo, oppure è possibile proiettare le due immagini simultaneamente.\\ Visualizzare l'anaglifo a occhio nudo però non è agevole e non si percepisce l'illusione della tridimensionalità. Se però si visualizza l'immagine con appositi occhiali dove si ha una lente rossa e una lente filtrata con un colore additivo si percepisce una profondità dell'immagine che in realtà non esiste: l'occhio che vede attraverso il filtro rosso vedrà le parti di immagine rosse come parti "chiare", mentre l'occhio che vede attraverso il filtro ciano scarta le parti rosse e vede le parti dell'immagine ciano come parti "scure", così da fornire la tridimensionalità dell'immagine. 
     \begin{figure}[h]
     	\centering
     	 \subfloat{\includegraphics[width=.45\columnwidth]{anaglif.png}} \quad
@@ -152,15 +163,26 @@
     	\caption{A sinistra occhiali per anaglifi. A destra immagine trasformata in anaglifo}
     	\label{fig:anagl}
     \end{figure}
-\newpage
-    \subsection{Tecnica con gli occhiali 3D}
+    \subsection{Tecnica Active Shutter}
+    Una tecnica alternativa, ma simile, a quella anaglifica è l'utilizzo di occhiali 3D.\\
+    Anche in questo caso occorre una ripresa di due immagini da due telecamere poste ad una distanza pari a quella tra i due occhi di un umano. La visione delle due immagini deve essere simultanea ed ogni occhio deve poter vedere solo l'immagine ad esso destinata, solo in questo modo è possibile dare un'illusione di tridimensionalità. Questa visione simultanea delle due immagini è possibile grazie alla proiezione in rapida sequenza dei frame destinati alternativamente all'occhio destro e al sinistro e la distinzione delle immagini avviene attraverso un dispositivo ottico che permette l'otturazione in sincronia con i frame proiettati sullo schermo.\cite{wiki:3dglass} \\
      \begin{figure}[h]
-    	\centering   	
-    	\includegraphics[width=10cm, height=12cm]{visione.png}
-    	\caption{Utilizzo della tecnologia 3D in 3D4Amb}
-    	\label{fig:visione}
+    	\centering
+    	\subfloat{\includegraphics[width=.45\columnwidth]{frame-1.jpg}} \quad
+    	\subfloat{\includegraphics[width=.45\columnwidth]{frame-2.jpg}}
+    	\caption{Principio di funzionamento di occhiali Active Shutter}
+    	\label{fig:shutter}
     \end{figure}
-	\subsection{Tecnica con headset VR}
+	\subsection{Tecnica con visori VR}
+	Un'altra possibile tecnica per la visione binoculare è quella mediante l'utilizzo di un visore VR. Essi sono dispositivi a forma di occhiali che permettono di percepire un'immagine proiettata su uno schermo come un immagine a realtà aumentata.\\
+	Vi sono due tipologie di visori: quelli più sofisticati che richiedono di essere collegati a potenti pc o console, oppure visori dove occorre semplicemente inserire uno smartphone nello scompartimento frontale.\\
+	In questo caso creare una visione binoculare adatta a un trattamento dell'ambliopia è più semplice: bisogna sdoppiare una stessa immagine e penalizzare solo quella destinata all'occhio sano.
+	\begin{figure}[h]
+		\centering   	
+		\includegraphics[width=60mm]{visorevr.jpg}
+		\caption{Esempio di un visore VR con scompartimento frontale per smartphone}
+		\label{fig:headsetvr}
+	\end{figure}
 	\chapter{Clash Ninja: Studi preliminari} 
 	\chapter{Clash Ninja: Realizzazione}   
     \bibliographystyle{plain}

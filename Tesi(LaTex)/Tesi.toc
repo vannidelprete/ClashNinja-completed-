@@ -1,23 +1,23 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {chapter}{Introduzione}{3}{chapter*.2}
-\contentsline {chapter}{\numberline {1}Ambliopia}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Cos'\IeC {\`e} l'ambliopia?}{5}{section.1.1}
-\contentsline {section}{\numberline {1.2}Cause dell'ambliopia}{5}{section.1.2}
-\contentsline {section}{\numberline {1.3}Tipologie di ambliopia}{6}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Ambliopia anisometropica}{6}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Ambliopia strabica}{6}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Diagnosi dell'ambliopia}{6}{section.1.4}
-\contentsline {section}{\numberline {1.5}Trattamenti}{6}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Metodo occlusivo}{6}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Atropina}{7}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Metodo I-BiT}{8}{subsection.1.5.3}
-\contentsline {chapter}{\numberline {2}3D4Amb}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduzione al progetto}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Obiettivo del progetto}{9}{section.2.2}
-\contentsline {section}{\numberline {2.3}Tecniche}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Tecnica con anaglifi}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Tecnica con gli occhiali 3D}{11}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Tecnica con headset VR}{11}{subsection.2.3.3}
-\contentsline {chapter}{\numberline {3}Clash Ninja: Studi preliminari}{13}{chapter.3}
-\contentsline {chapter}{\numberline {4}Clash Ninja: Realizzazione}{15}{chapter.4}
+\contentsline {chapter}{Introduzione}{5}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Ambliopia}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}Cos'\IeC {\`e} l'ambliopia?}{7}{section.1.1}
+\contentsline {section}{\numberline {1.2}Cause dell'ambliopia}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Tipologie di ambliopia}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Ambliopia anisometropica}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Ambliopia strabica}{8}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Diagnosi dell'ambliopia}{8}{section.1.4}
+\contentsline {section}{\numberline {1.5}Trattamenti}{8}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Metodo occlusivo}{9}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Atropina}{9}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Metodo I-BiT}{11}{subsection.1.5.3}
+\contentsline {chapter}{\numberline {2}3D4Amb}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduzione al progetto}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Obiettivo del progetto}{13}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tecniche}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Tecnica con anaglifi}{15}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Tecnica Active Shutter}{15}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Tecnica con visori VR}{16}{subsection.2.3.3}
+\contentsline {chapter}{\numberline {3}Clash Ninja: Studi preliminari}{17}{chapter.3}
+\contentsline {chapter}{\numberline {4}Clash Ninja: Realizzazione}{19}{chapter.4}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.1)  7 MAY 2018 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.1)  8 MAY 2018 19:56
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -632,6 +632,9 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \openout3 = `Tesi-frn.tex'.
 
 )
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
 ("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -770,10 +773,19 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
-("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preprint\fullpage.
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
 sty"
-Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip44
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip44
+\f@nch@O@elh=\skip45
+\f@nch@O@erh=\skip46
+\f@nch@O@olh=\skip47
+\f@nch@O@orh=\skip48
+\f@nch@O@elf=\skip49
+\f@nch@O@erf=\skip50
+\f@nch@O@olf=\skip51
+\f@nch@O@orf=\skip52
 )
 ("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.
 sty"
@@ -782,59 +794,119 @@ Package: chngcntr 2018/04/09 v1.1a change counter resetting
 ("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count112
-\sf@farskip=\skip45
+\sf@farskip=\skip53
 \sf@captopadj=\dimen125
-\sf@capskip=\skip46
-\sf@nearskip=\skip47
+\sf@capskip=\skip54
+\sf@nearskip=\skip55
 \c@subfigure=\count113
 \c@subfigure@save=\count114
 \c@lofdepth=\count115
 \c@subtable=\count116
 \c@subtable@save=\count117
 \c@lotdepth=\count118
-\sf@top=\skip48
-\sf@bottom=\skip49
+\sf@top=\skip56
+\sf@bottom=\skip57
+)
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.
+sty"
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count119
+\calc@Bcount=\count120
+\calc@Adimen=\dimen126
+\calc@Bdimen=\dimen127
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count121
+\calc@Cskip=\skip60
+)
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.st
+y"
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen128
+\AM@pageheight=\dimen129
+
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.
+def"
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box31
+\AM@global@opts=\toks20
+\AM@toc@title=\toks21
+\c@AM@survey=\count122
+\AM@templatesizebox=\box32
 ) (Tesi.aux)
 \openout1 = `Tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
 
 ("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Info: Redefining \it@ocap on input line 18.
-LaTeX Info: Redefining \it@ccap on input line 18.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 23.
+
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+LaTeX Info: Redefining \it@ocap on input line 23.
+LaTeX Info: Redefining \it@ccap on input line 23.
 
 ("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
-\scratchdimen=\dimen126
-\scratchbox=\box31
-\nofMPsegments=\count120
-\nofMParguments=\count121
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count122
-\MPscratchDim=\dimen127
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
-\everyMPtoPDFconversion=\toks21
+\scratchcounter=\count123
+\scratchdimen=\dimen130
+\scratchbox=\box33
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen131
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
+\everyMPtoPDFconversion=\toks23
 )
 ("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -851,12 +923,12 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box32
+\AtBeginShipoutBox=\box34
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 23.
 
 ("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -866,16 +938,81 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count125
+\c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
  (Tesi.out) (Tesi.out)
 \@outlinefile=\write4
 \openout4 = `Tesi.out'.
 
+
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdflscape
+.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.st
+y"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+
+pdfTeX warning: pdflatex.exe (file ./fronteingegnerialt.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+<fronteingegnerialt.pdf, id=87, 614.295pt x 794.97pt>
+File: fronteingegnerialt.pdf Graphic file (type pdf)
+<use fronteingegnerialt.pdf>
+Package pdftex.def Info: fronteingegnerialt.pdf  used on input line 24.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./fronteingegnerialt.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+File: fronteingegnerialt.pdf Graphic file (type pdf)
+<use fronteingegnerialt.pdf>
+Package pdftex.def Info: fronteingegnerialt.pdf  used on input line 24.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./fronteingegnerialt.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./fronteingegnerialt.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+<fronteingegnerialt.pdf, id=90, page=1, 614.295pt x 794.97pt>
+File: fronteingegnerialt.pdf Graphic file (type pdf)
+<use fronteingegnerialt.pdf, page 1>
+Package pdftex.def Info: fronteingegnerialt.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: fronteingegnerialt.pdf Graphic file (type pdf)
+<use fronteingegnerialt.pdf, page 1>
+Package pdftex.def Info: fronteingegnerialt.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: fronteingegnerialt.pdf Graphic file (type pdf)
+<use fronteingegnerialt.pdf, page 1>
+Package pdftex.def Info: fronteingegnerialt.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: fronteingegnerialt.pdf Graphic file (type pdf)
+<use fronteingegnerialt.pdf, page 1>
+Package pdftex.def Info: fronteingegnerialt.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: fronteingegnerialt.pdf Graphic file (type pdf)
+<use fronteingegnerialt.pdf, page 1>
+Package pdftex.def Info: fronteingegnerialt.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[1
+
+ <./fronteingegnerialt.pdf>] [2
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 27.
  (Tesi.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -886,149 +1023,229 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `Tesi.toc'.
 
- [1
-
-
-{C:/Users/pibe1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+ [3{C:/Users/pibe1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [4
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 29.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 34.
 
-("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 25--37
+Underfull \hbox (badness 10000) in paragraph at lines 32--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--37
+Underfull \hbox (badness 10000) in paragraph at lines 32--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--37
+Underfull \hbox (badness 10000) in paragraph at lines 32--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--37
+Underfull \hbox (badness 10000) in paragraph at lines 32--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--37
+Underfull \hbox (badness 10000) in paragraph at lines 32--40
 
  []
 
-[3] [4
+[5] [6
 
 ]
 Capitolo 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 53.
+("C:\Users\pibe1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 59.
+(Font)              <7> on input line 62.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 59.
-[5]
-<metoccl.jpg, id=147, 730.73pt x 548.0475pt>
+(Font)              <5> on input line 62.
+[7]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+<metoccl.jpg, id=190, 730.73pt x 548.0475pt>
 File: metoccl.jpg Graphic file (type jpg)
 <use metoccl.jpg>
-Package pdftex.def Info: metoccl.jpg  used on input line 91.
+Package pdftex.def Info: metoccl.jpg  used on input line 94.
 (pdftex.def)             Requested size: 170.71652pt x 128.03854pt.
- [6]
-<atrop.jpg, id=160, 57.816pt x 38.544pt>
+<atrop.jpg, id=192, 57.816pt x 38.544pt>
 File: atrop.jpg Graphic file (type jpg)
 <use atrop.jpg>
-Package pdftex.def Info: atrop.jpg  used on input line 102.
+Package pdftex.def Info: atrop.jpg  used on input line 105.
 (pdftex.def)             Requested size: 170.71652pt x 113.8173pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-[7 <./metoccl.jpg>]
-<i-bit.jpg, id=168, 208.78pt x 160.6pt>
+[9 <./metoccl.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10 <./atrop.jpg>]
+<i-bit.jpg, id=204, 208.78pt x 160.6pt>
 File: i-bit.jpg Graphic file (type jpg)
 <use i-bit.jpg>
-Package pdftex.def Info: i-bit.jpg  used on input line 118.
+Package pdftex.def Info: i-bit.jpg  used on input line 121.
 (pdftex.def)             Requested size: 170.71652pt x 131.3277pt.
- [8 <./atrop.jpg> <./i-bit.jpg>]
-Capitolo 2.
-<logo3d4amb.png, id=176, 497.86pt x 111.41624pt>
-File: logo3d4amb.png Graphic file (type png)
-<use logo3d4amb.png>
-Package pdftex.def Info: logo3d4amb.png  used on input line 130.
-(pdftex.def)             Requested size: 170.71652pt x 38.20573pt.
-[9
 
- <./logo3d4amb.png>]
-<anaglif.png, id=189, 225.84375pt x 225.84375pt>
-File: anaglif.png Graphic file (type png)
-<use anaglif.png>
-Package pdftex.def Info: anaglif.png  used on input line 150.
-(pdftex.def)             Requested size: 203.83417pt x 203.84676pt.
-<ramanag.jpg, id=190, 1606.0pt x 903.375pt>
-File: ramanag.jpg Graphic file (type jpg)
-<use ramanag.jpg>
-Package pdftex.def Info: ramanag.jpg  used on input line 151.
-(pdftex.def)             Requested size: 203.83417pt x 114.64464pt.
- [10 <./anaglif.png> <./ramanag.jpg>]
-<visione.png, id=201, 708.6475pt x 873.2625pt>
-File: visione.png Graphic file (type png)
-<use visione.png>
-Package pdftex.def Info: visione.png  used on input line 159.
-(pdftex.def)             Requested size: 284.5353pt x 341.4238pt.
- [11 <./visione.png>] [12
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11 <./i-bit.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12
 
 ]
+Capitolo 2.
+<logo3d4amb.png, id=215, 497.86pt x 111.41624pt>
+File: logo3d4amb.png Graphic file (type png)
+<use logo3d4amb.png>
+Package pdftex.def Info: logo3d4amb.png  used on input line 133.
+(pdftex.def)             Requested size: 170.71652pt x 38.20573pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 140.
+[13 <./logo3d4amb.png>]
+<visione.png, id=225, 708.6475pt x 873.2625pt>
+File: visione.png Graphic file (type png)
+<use visione.png>
+Package pdftex.def Info: visione.png  used on input line 151.
+(pdftex.def)             Requested size: 170.71684pt x 199.1672pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./visione.png>]
+<anaglif.png, id=237, 225.84375pt x 225.84375pt>
+File: anaglif.png Graphic file (type png)
+<use anaglif.png>
+Package pdftex.def Info: anaglif.png  used on input line 161.
+(pdftex.def)             Requested size: 175.49881pt x 175.50954pt.
+<ramanag.jpg, id=238, 1606.0pt x 903.375pt>
+File: ramanag.jpg Graphic file (type jpg)
+<use ramanag.jpg>
+Package pdftex.def Info: ramanag.jpg  used on input line 162.
+(pdftex.def)             Requested size: 175.49881pt x 98.7099pt.
+<frame-1.jpg, id=240, 76.24484pt x 39.0258pt>
+File: frame-1.jpg Graphic file (type jpg)
+<use frame-1.jpg>
+Package pdftex.def Info: frame-1.jpg  used on input line 171.
+(pdftex.def)             Requested size: 175.49881pt x 89.84079pt.
+<frame-2.jpg, id=241, 76.24484pt x 39.0258pt>
+File: frame-2.jpg Graphic file (type jpg)
+<use frame-2.jpg>
+Package pdftex.def Info: frame-2.jpg  used on input line 172.
+(pdftex.def)             Requested size: 175.49881pt x 89.84079pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./anaglif.png> <./ramanag.jpg>]
+<visorevr.jpg, id=250, 597.23125pt x 464.73625pt>
+File: visorevr.jpg Graphic file (type jpg)
+<use visorevr.jpg>
+Package pdftex.def Info: visorevr.jpg  used on input line 182.
+(pdftex.def)             Requested size: 170.71652pt x 132.84122pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./frame-1.jpg> <./frame-2.jpg> <./visorevr.jpg>]
 Capitolo 3.
-[13] [14
+[17
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18
 
 ]
 Capitolo 4.
-(Tesi.bbl [15] [16
+(Tesi.bbl [19]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
- [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
  (Tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: FF2EA2B42EF3CB880BBC5ADDD7B6AC8C;1382.
+(rerunfilecheck)             Checksum: C7EAA9D4B338BCEB6AA51599427062B7;1376.
  ) 
 Here is how much of TeX's memory you used:
- 8541 strings out of 493305
- 128262 string characters out of 3129803
- 219262 words of memory out of 3000000
- 11884 multiletter control sequences out of 15000+200000
- 18322 words of font info for 40 fonts, out of 3000000 for 9000
+ 9938 strings out of 493305
+ 148045 string characters out of 3129803
+ 245248 words of memory out of 3000000
+ 13222 multiletter control sequences out of 15000+200000
+ 51448 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,39p,1063b,419s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\pibe1\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecti1200.pk> <C:\Users\pibe1\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecbi1200.pk> <C:\Users\pibe1\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\pibe1\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\pibe1\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\pibe1\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\pibe1\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Us
-ers\pibe1\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.
-pk> <C:\Users\pibe1\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecbx1728.pk> <C:\Users\pibe1\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
-\ec\dpi600\ectt1200.pk> <C:\Users\pibe1\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\pibe1\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\pibe1\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\pibe1\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk>
-Output written on Tesi.pdf (17 pages, 1056649 bytes).
+ 38i,18n,43p,1109b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/pibe1/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
+}<C:/Users/pibe1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr
+8a.pfb><C:/Users/pibe1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/
+utmb8a.pfb><C:/Users/pibe1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/ti
+mes/utmbi8a.pfb><C:/Users/pibe1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/u
+rw/times/utmr8a.pfb><C:/Users/pibe1/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmr8a.pfb><C:/Users/pibe1/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on Tesi.pdf (21 pages, 1267289 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 204 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 
