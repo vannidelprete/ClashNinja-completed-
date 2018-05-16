@@ -18,4 +18,28 @@
 \BOOKMARK [2][-]{subsection.2.3.2}{Tecnica Active Shutter}{section.2.3}% 18
 \BOOKMARK [2][-]{subsection.2.3.3}{Tecnica con visori VR}{section.2.3}% 19
 \BOOKMARK [0][-]{chapter.3}{Clash Ninja: Studi preliminari}{}% 20
-\BOOKMARK [0][-]{chapter.4}{Clash Ninja: Realizzazione}{}% 21
+\BOOKMARK [1][-]{section.3.1}{L'idea}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.2}{Struttura}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.3}{Strumenti}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.1}{Unity}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.2}{3D4Amb-ULib}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.3}{Google Cardboard}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.4}{Controller Bluetooth}{section.3.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Set di gioco}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Clash Ninja: Realizzazione}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Introduzione}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Sprite}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.2.1}{Personaggio principale}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.2}{Nemici}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.3}{I mondi}{section.4.2}% 34
+\BOOKMARK [1][-]{section.4.3}{Collider}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.4}{Movimento}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.4.1}{Gestione delle animazioni con mecanim}{section.4.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.2}{Script del movimento}{section.4.4}% 38
+\BOOKMARK [1][-]{section.4.5}{AI del nemico}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.5.1}{Animazioni del nemico con mecanim}{section.4.5}% 40
+\BOOKMARK [2][-]{subsection.4.5.2}{Script per l'AI del nemico}{section.4.5}% 41
+\BOOKMARK [1][-]{section.4.6}{Spawning}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.6.1}{Generazione automatica dei nemici}{section.4.6}% 43
+\BOOKMARK [2][-]{subsection.4.6.2}{Generazione automatica delle pozioni}{section.4.6}% 44
+\BOOKMARK [1][-]{section.4.7}{3D4Amb-ULib}{chapter.4}% 45
